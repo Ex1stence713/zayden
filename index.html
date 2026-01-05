@@ -3,40 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayden</title>
+    <title>Paweł Zayden Gajewski</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <div class="card">
-        <h1>Zayden</h1>
-        
-        <img src="https://cdn.discordapp.com/attachments/1392247942076960768/1455303243881123951/avatar.jpg?ex=69543c43&is=6952eac3&hm=0c7ef0a39913fa149aa6ae69a1562c88c61eb7ca81fbda19b8079a09d71462a5&" alt="Zayden" class="user" >
-        <!-- <div class="description">
-            <p></p>
-        </div> -->
+    <div class="particles" id="particles"></div>
 
-        <div class="parent">
-            <div class="d1">
-                Pobieranie informacji...
-            </div> 
-            <iframe class="d2" src="https://discord.com/widget?id=1385222062616088687&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            <div class="d3 flex" style="align-items: center">Cześć z tej strony Paweł. Pochodze z województwa Świętokrzyskiego oraz mam 19 lat. Niedługo wchodze w tryb życia dorosłego osobnika. Moim hobby lub zainteresowaniem jak kto tam nazywa jest Granie w gry ( League of Legends, MTA, Minecraft, cs1.6, World Of Tanks) oraz jazda na rowerze oraz Gotowanie różnych potraw w wolnym czasie.
+    <nav>
+        <div class="logo">ZAYDEN</div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Start</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#timeline">Doświadczenie</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 Tryb</button>
+    </nav>
 
-Uwielbiam słuchać muzyki takie jak hip-hopu i rap , dlatego często Mam odpalone rzeczy muzyczne :D. Komputer to dla mnie okno na świat. Bardzo lubię rozmawiać na czacie i poznawać różnych ludzi. Często spotykam tam osoby, od których dowiaduję się różnych ciekawych rzeczy, jednym słowem łączę przyjemne z pożytecznym.
+    <div class="container">
+        <section id="home" class="hero">
+            <img src="https://cdn.discordapp.com/attachments/1392247942076960768/1455303243881123951/avatar.jpg?ex=695cce03&is=695b7c83&hm=78c8e6fbbc413b16c37e4062ee91bb08a7a993dd46f35d5e928523e7ae573d45&" alt="Zayden" class="hero-img">
+            <h1 style="font-family: 'Arial', sans-serif; font-size: 2.5em; color: #333; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Paweł Zayden Gajewski</h1>
+            <p>Programista • Kreatywny Developer • Discord Server Owner</p>
+        </section>
 
-Jestem komunikatywną osobą. Myślę, że potrafiłbym zachować się w każdej sytuacji. Wiem, iż aby przetrwać trzeba nie poddawać sie  dlatego nigdy się nie poddaję i ide dalej do celu , zawsze dążę do celu nawet w trudnych sytuacjach! Mam wielu przyjaciół w tym kilku sprawdzonych.</div>
-            <div class="d4">
-                <iframe data-testid="embed-iframe" style="border-radius:12px; width: calc(100% - 5px);" height="80" src="https://open.spotify.com/embed/playlist/05qp4A2Fd9wEgXrPwnDJet?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px; width: calc(100% - 5px);" height="80" src="https://open.spotify.com/embed/playlist/6SaX6vwnA09zHIwhjIkzcw?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <section id="about" class="section">
+            <h2 class="section-title">O mnie</h2>
+            <div class="about-content">
+                <p style="line-height: 1.8;">
+                    Cześć z tej strony Paweł. Pochodze z województwa Świętokrzyskiego oraz mam 19 lat. Niedługo wchodze w tryb życia dorosłego osobnika. Moim hobby lub zainteresowaniem jak kto tam nazywa jest Granie w gry oraz jazda na rowerze oraz Gotowanie różnych potraw w wolnym czasie. Uwielbiam słuchać muzyki takie jak hip-hopu i rap , dlatego często Mam odpalone rzeczy muzyczne :D. Komputer to dla mnie okno na świat. Bardzo lubię rozmawiać na czacie i poznawać różnych ludzi. Często spotykam tam osoby, od których dowiaduję się różnych ciekawych rzeczy, jednym słowem łączę przyjemne z pożytecznym. Jestem komunikatywną osobą. Myślę, że potrafiłbym zachować się w każdej sytuacji. Wiem, iż aby przetrwać trzeba nie poddawać sie dlatego nigdy się nie poddaję i ide dalej do celu , zawsze dążę do celu nawet w trudnych sytuacjach! Mam wielu przyjaciół w tym kilku sprawdzonych.
+                </p>
             </div>
-            
+        </section>
+
+        <section id="stats" class="section">
+            <h2 class="section-title">Statystyki</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <p>Ilośc Projektów</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <p>Lata Doświadczenia</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <p>Commitów</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150</div>
+                    <p>Użytkowników</p>
+                </div>
             </div>
-        </div>
-    
-        <!-- <a href="https://discord.gg/p8YGTDyxR8"><div class="server">Załoga Eneuda</div></a> -->
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Umiejętności</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0" data-width="67"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Discord.js</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0" data-width="40"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">RP Scripting</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0" data-width="48"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Database (SQL)</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0" data-width="30"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Projekty</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3 class="project-title">Discord Bot Manager</h3>
+                    <p>Zaawansowany bot Discord z systemem moderacji,mini-gier. Obsługuje ponad 150 użytkowników.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎮</div>
+                    <h3 class="project-title">Script RPG MTA</h3>
+                    <p>Paczki skryptów na Serwery Multi Theft Auto [MTA]</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🌐</div>
+                    <h3 class="project-title">Web Dashboard</h3>
+                    <p>Strony internetowe z różnych potrzeb.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">💾</div>
+                    <h3 class="project-title">Database System</h3>
+                    <p>System zarządzania bazą danych z szybkim dostępem.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎨</div>
+                    <h3 class="project-title"> Serwer Discord</h3>
+                    <p>Serwer Załoga Eneuda to serwer który został założony 3 lata temu, obecna ilość użytkowników to 156 + 6 Botów  </p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🔧</div>
+                    <h3 class="project-title">Automation Tools</h3>
+                    <p>Narzędzia do automatyzacji zadań i procesów na serwerach Discord i RP.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section">
+            <h2 class="section-title">Moje Doświadczenie</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Teraz</div>
+                        <h3>Senior Developer</h3>
+                        <p>Stworzyłem kompleksowego bota Discord obsługującego ponad 150 użytkowników. Projekt nauczył mnie pracy z większą bazą danych, optymalizacji oraz odpowiedzialności za stabilność systemu 24/7.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Rok Temu</div>
+                        <h3>Pierwszy Duży Projekt</h3>
+                        <p>Stworzenie kompleksowego bota Discord obsługującego 1000+ użytkowników.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Dwa Lata Temu</div>
+                        <h3>Rozpoczęcie Przygody z Lua</h3>
+                        <p>Pierwszy kontakt z programowaniem serwerów RPG oraz RP.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Trzy Lata Temu</div>
+                        <h3>Pierwsza Strona Internetowa</h3>
+                        <p>Pierwsze kroki do robienia swojej strony internetowej</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Pięć lat temu</div>
+                        <h3>Początek Pasji</h3>
+                        <p>Odkrycie zainteresowania programowaniem i rozpoczęcie nauki kodowania.</p>
+                    </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-grid">
+                <a href="https://discord.com" class="contact-card" target="_blank">
+                    <div class="contact-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>._nighthunter_.</p>
+                </a>
+                <a href="mailto:kontakt@zayden.pl" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>owowdjdd@gmail.com</p>
+                </a>
+                <a href="https://github.com" class="contact-card" target="_blank">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>Ex1stence713</p>
+                </a>
+                <a href="https://twitter.com" class="contact-card" target="_blank">
+                    <div class="contact-icon">👻</div>
+                    <h3>Snapchat</h3>
+                    <p>yasuooo.star</p>
+                </a>
+                <a href="https://tiktok.com" class="contact-card" target="_blank">
+                    <div class="contact-icon">🎵</div>
+                    <h3>TikTok</h3>
+                    <p>zaydenhunter4</p>
+                </a>
+                <a href="https://instagram.com" class="contact-card" target="_blank">
+                    <div class="contact-icon">📷</div>
+                </h3>Instagram</h3>
+                <p>ene.u.d</en></p>
+                </a>
+            </div>
+        </section>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
